@@ -1,0 +1,114 @@
+package com.ideas.webportal.model.domain;
+
+import java.io.Serializable;
+
+import org.springframework.stereotype.Component;
+
+
+@Component
+public class UserProfile implements Serializable{
+	
+	/**
+	 * serialVersionUID
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private long userId;
+	
+	private String userName;
+	
+	private String userRole;
+	
+	private String firstName;
+	
+	private String lastName;
+	
+	private String mobileNo;
+	
+	private long roleId;
+	
+	private int noOfDaysPassReset;
+	
+
+	public long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(long userId) {
+		this.userId = userId;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getUserRole() {
+		return userRole;
+	}
+
+	public void setUserRole(String userRole) {
+		this.userRole = userRole;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getMobileNo() {
+		return mobileNo;
+	}
+
+	public void setMobileNo(String mobileNo) {
+		this.mobileNo = mobileNo;
+	}
+
+	/**
+	 * @return the roleId
+	 */
+	public long getRoleId() {
+		return roleId;
+	}
+
+	/**
+	 * @param roleId the roleId to set
+	 */
+	public void setRoleId(long roleId) {
+		this.roleId = roleId;
+	}
+
+	
+
+	/**
+	 * @return the noOfDaysPassReset
+	 */
+	public int getNoOfDaysPassReset() {
+		return noOfDaysPassReset;
+	}
+
+	/**
+	 * @param noOfDaysPassReset the noOfDaysPassReset to set
+	 */
+	public void setNoOfDaysPassReset(int noOfDaysPassReset) {
+		this.noOfDaysPassReset = noOfDaysPassReset;
+	}
+	
+	
+	
+
+}
