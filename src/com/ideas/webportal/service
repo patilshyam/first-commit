@@ -6,10 +6,7 @@ import java.util.List;
 import com.ideas.webportal.exception.ApplicationException;
 import com.ideas.webportal.model.domain.User;
 
-/**
- * 
- * @author ujwal.daware
- *
+
  */
 public interface UserService {
 
