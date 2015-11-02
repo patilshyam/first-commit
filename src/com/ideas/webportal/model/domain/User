@@ -1,0 +1,460 @@
+package com.ideas.webportal.model.domain;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class User implements Serializable{
+	
+	/**
+	 * serialVersionUID
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private long userId;
+	
+	private String userName;
+	
+	private String firstName;
+	
+	private String lastName;
+	
+	private String emailId;
+	
+	private String password;
+	
+	private String confirmPassword;
+	
+	private String bankName;
+	
+	private String userRole;
+	
+	private String status;
+	
+	private long bankId;
+	
+	private long roleId;
+	
+	private String createdOn;
+	
+	private String lastModified;
+	
+	private Date creationTime;
+	
+	private String createdBy;
+	
+	private Date lastModifiedTime;
+	
+	private String lastModifiedBy;
+	
+	private String oneTimePassword;
+	
+	private Date passwordResetDate;
+	
+	private int loginFailCounter;
+	
+//	private String isLocked; 
+	
+	
+	
+	private String url;
+	
+	private String contextName;
+	
+	private String oldPassword;
+	private String confirmNewPassword;
+	private String newPassword;
+	
+	
+	
+
+
+	/**
+	 * @return the confirmNewPassword
+	 */
+	public String getConfirmNewPassword() {
+		return confirmNewPassword;
+	}
+
+	/**
+	 * @param confirmNewPassword the confirmNewPassword to set
+	 */
+	public void setConfirmNewPassword(String confirmNewPassword) {
+		this.confirmNewPassword = confirmNewPassword;
+	}
+
+	/**
+	 * @return the newPassword
+	 */
+	public String getNewPassword() {
+		return newPassword;
+	}
+
+	/**
+	 * @param newPassword the newPassword to set
+	 */
+	public void setNewPassword(String newPassword) {
+		this.newPassword = newPassword;
+	}
+
+	/**
+	 * @return the oldPassword
+	 */
+	public String getOldPassword() {
+		return oldPassword;
+	}
+
+	/**
+	 * @param oldPassword the oldPassword to set
+	 */
+	public void setOldPassword(String oldPassword) {
+		this.oldPassword = oldPassword;
+	}
+
+	/**
+	 * @return the passwordResetTime
+	 */
+	public Date getPasswordResetDate() {
+		return passwordResetDate;
+	}
+
+	/**
+	 * @param passwordResetTime the passwordResetTime to set
+	 */
+	public void setPasswordResetDate(Date passwordResetDate) {
+		this.passwordResetDate = passwordResetDate;
+	}
+
+	/**
+	 * @return the contextName
+	 */
+	public String getContextName() {
+		return contextName;
+	}
+
+	/**
+	 * @param contextName the contextName to set
+	 */
+	public void setContextName(String contextName) {
+		this.contextName = contextName;
+	}
+
+	/**
+	 * @return the url
+	 */
+	public String getUrl() {
+		return url;
+	}
+
+	/**
+	 * @param url the url to set
+	 */
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	/**
+	 * @return the userId
+	 */
+	public long getUserId() {
+		return userId;
+	}
+
+	/**
+	 * @param userId the userId to set
+	 */
+	public void setUserId(long userId) {
+		this.userId = userId;
+	}
+
+	/**
+	 * @return the userName
+	 */
+	public String getUserName() {
+		return userName;
+	}
+
+	/**
+	 * @param userName the userName to set
+	 */
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	/**
+	 * @return the firstName
+	 */
+	public String getFirstName() {
+		return firstName;
+	}
+
+	/**
+	 * @param firstName the firstName to set
+	 */
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	/**
+	 * @return the lastName
+	 */
+	public String getLastName() {
+		return lastName;
+	}
+
+	/**
+	 * @param lastName the lastName to set
+	 */
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	/**
+	 * @return the emailId
+	 */
+	public String getEmailId() {
+		return emailId;
+	}
+
+	/**
+	 * @param emailId the emailId to set
+	 */
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+	/**
+	 * @return the password
+	 */
+	public String getPassword() {
+		return password;
+	}
+
+	/**
+	 * @param password the password to set
+	 */
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	
+	/**
+	 * @return the confirmPassword
+	 */
+	public String getConfirmPassword() {
+		return confirmPassword;
+	}
+
+	/**
+	 * @param confirmPassword the confirmPassword to set
+	 */
+	public void setConfirmPassword(String confirmPassword) {
+		this.confirmPassword = confirmPassword;
+	}
+
+	/**
+	 * @return the bankName
+	 */
+	public String getBankName() {
+		return bankName;
+	}
+
+	/**
+	 * @param bankName the bankName to set
+	 */
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}
+
+	/**
+	 * @return the userRole
+	 */
+	public String getUserRole() {
+		return userRole;
+	}
+
+	/**
+	 * @param userRole the userRole to set
+	 */
+	public void setUserRole(String userRole) {
+		this.userRole = userRole;
+	}
+
+	/**
+	 * @return the status
+	 */
+	public String getStatus() {
+		return status;
+	}
+
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	/**
+	 * @return the bankId
+	 */
+	public long getBankId() {
+		return bankId;
+	}
+
+	/**
+	 * @param bankId the bankId to set
+	 */
+	public void setBankId(long bankId) {
+		this.bankId = bankId;
+	}
+
+	/**
+	 * @return the roleId
+	 */
+	public long getRoleId() {
+		return roleId;
+	}
+
+	/**
+	 * @param roleId the roleId to set
+	 */
+	public void setRoleId(long roleId) {
+		this.roleId = roleId;
+	}
+
+	/**
+	 * @return the createdOn
+	 */
+	public String getCreatedOn() {
+		return createdOn;
+	}
+
+	/**
+	 * @param createdOn the createdOn to set
+	 */
+	public void setCreatedOn(String createdOn) {
+		this.createdOn = createdOn;
+	}
+
+	/**
+	 * @return the lastModified
+	 */
+	public String getLastModified() {
+		return lastModified;
+	}
+
+	/**
+	 * @param lastModified the lastModified to set
+	 */
+	public void setLastModified(String lastModified) {
+		this.lastModified = lastModified;
+	}
+
+	/**
+	 * @return the creationTime
+	 */
+	public Date getCreationTime() {
+		return creationTime;
+	}
+
+	/**
+	 * @param creationTime the creationTime to set
+	 */
+	public void setCreationTime(Date creationTime) {
+		this.creationTime = creationTime;
+	}
+
+	/**
+	 * @return the createdBy
+	 */
+	public String getCreatedBy() {
+		return createdBy;
+	}
+
+	/**
+	 * @param createdBy the createdBy to set
+	 */
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	/**
+	 * @return the lastModifiedTime
+	 */
+	public Date getLastModifiedTime() {
+		return lastModifiedTime;
+	}
+
+	/**
+	 * @param lastModifiedTime the lastModifiedTime to set
+	 */
+	public void setLastModifiedTime(Date lastModifiedTime) {
+		this.lastModifiedTime = lastModifiedTime;
+	}
+
+	/**
+	 * @return the lastModifiedBy
+	 */
+	public String getLastModifiedBy() {
+		return lastModifiedBy;
+	}
+
+	/**
+	 * @param lastModifiedBy the lastModifiedBy to set
+	 */
+	public void setLastModifiedBy(String lastModifiedBy) {
+		this.lastModifiedBy = lastModifiedBy;
+	}
+
+	/**
+	 * @return the oneTimePassword
+	 */
+	public String getOneTimePassword() {
+		return oneTimePassword;
+	}
+
+	/**
+	 * @param oneTimePassword the oneTimePassword to set
+	 */
+	public void setOneTimePassword(String oneTimePassword) {
+		this.oneTimePassword = oneTimePassword;
+	}
+
+	/**
+	 * @return the loginFailCounter
+	 */
+	public int getLoginFailCounter() {
+		return loginFailCounter;
+	}
+
+	/**
+	 * @param loginFailCounter the loginFailCounter to set
+	 */
+	public void setLoginFailCounter(int loginFailCounter) {
+		this.loginFailCounter = loginFailCounter;
+	}
+
+	/**
+	 * @return the userRoleList
+	 */
+
+
+
+//	/**
+//	 * @return the isLocked
+//	 */
+//	public String getIsLocked() {
+//		return isLocked;
+//	}
+//
+//	/**
+//	 * @param isLocked the isLocked to set
+//	 */
+//	public void setIsLocked(String isLocked) {
+//		this.isLocked = isLocked;
+//	}
+
+
+}
