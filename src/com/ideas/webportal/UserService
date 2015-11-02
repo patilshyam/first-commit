@@ -1,0 +1,103 @@
+package com.ideas.webportal.service;
+
+import java.util.List;
+
+
+import com.ideas.webportal.exception.ApplicationException;
+import com.ideas.webportal.model.domain.User;
+
+
+public interface UserService {
+
+	/**
+	 * This method id used to find the user based on the user id.
+	 * @param UserId
+	 * 		:	user id.
+	 * @return
+	 * 		:	{@link User}
+	 * @throws ApplicationException
+	 * 		:	Throws application exceptions.
+	 */
+	public User getUser(long userId) throws ApplicationException;
+
+	/**
+	 * This method is used to save the user.
+	 * @param User
+	 * 		:	{@link User}
+	 * @return
+	 * 		:	{@link User}
+	 * @throws ApplicationException
+	 * 		:	Throws application exeptions.
+	 * @throws Exception 
+	 */
+	public String saveUser(User user) throws ApplicationException, Exception;
+
+	/**
+	 * This method is used to update user.
+	 * @param User
+	 * 		:	{@link User}
+	 * @throws ApplicationException
+	 * 		:	throws application exception.
+	 */
+	public void updateUser(User user) throws ApplicationException;
+
+	/**
+	 * This method is remove the user.
+	 * @param UserId
+	 * 		:	user id.
+	 * @throws ApplicationException
+	 * 		:	throws application exceptions.
+	 */
+	public void deleteUser(long userId) throws ApplicationException;
+
+	
+	
+	/**
+	 * 
+	 * @param userName
+	 * @return
+	 */
+	public User getUserDetailsForUserName(String userName);
+
+	/**
+	 * This method is used to delete the customer logically.
+	 * It will set the status isdelete to the user.
+	 * @param userId
+	 * 		:	user id.
+	 * @throws ApplicationException
+	 * 		:	Throw application exception.
+	 */
+	public void isDeleteUser(long userId) throws ApplicationException;
+
+	/**
+	 * 
+	 * @param emailId
+	 * @param otp
+	 * @return
+	 * @throws ApplicationException
+	 */
+	public User getUserForEmailUserNameOtp(String emailId, String userName, String incryptedotp)
+			throws ApplicationException;
+
+	/**
+	 * This method is for used for update login fail counter.
+	 * @param username
+	 */
+	public void updateLoginFailCounter(String username);
+
+	/**
+	 * This method will return the login fail counter for the user.
+	 * @param username
+	 * 		:	user name.
+	 * @return
+	 * 		:	it will return login fail count.
+	 */
+	public int getLoginFailCounter(String username);
+
+	/**
+	 * This method is for reset the login fail counter.
+	 */
+	public void resetLoginFailCounter(String username);
+
+
+}
